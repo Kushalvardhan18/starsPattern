@@ -1,18 +1,17 @@
 public class FloydsTriangle {
-    public static void floyds() {
-       for (int i =0;i<=1;i++){
-           for (int j =1+i;j<=11;j++){
-               for (int k =1;k<=j;k++){
-               System.out.print(k);
-
-               }
-           System.out.println("");
-           }
-       }
+    public static void floyds(int n) {
+        int counter =0;
+     for(int i=1;i<=n;i++){
+         for(int j =0;j<i;j++){
+             counter = counter +1;
+             System.out.print(counter +" ");
+         }
+         System.out.println("");
+     }
     }
 
     public static void main(String[] args) {
-        floyds();
+        floyds(6);
 
     }
 }
